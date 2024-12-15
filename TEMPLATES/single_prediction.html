@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .result {
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .result p {
+            font-size: 18px;
+            color: #555;
+        }
+        .back {
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007bff;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .back:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <h1>Prediction Result</h1>
+            <p>{{ result }}</p>
+            <a href="{{ url_for('index') }}" class="back">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>
